@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 1;
+    background: linear-gradient(rgb(19, 19, 19),rgb(10, 10, 10))
+}
+
+body {
+    font-family: sans-serif;
+}
+
+i,
+svg {
+    pointer-events: none;
+    background: rgb(36, 36, 36);
+}
+
+h1 {
+    background: none;
+    color: white;
+}
+
+.title {
+    background: none;
+    color: white;
+    font-size: 4rem;
+    margin-top: 1rem;
+}
+
+.kick-pad, .snare-pad, .hihat-pad, .others-pad {
+    width: 4rem;
+    height: 4rem;
+    margin: 0.5rem 0.5rem;
+    cursor: pointer;
+    background: rgb(10, 10, 10);
+    border-radius: 10px;
+}
+
+.kick-pad {
+    background: rgb(116, 157, 204);
+}
+
+.snare-pad {
+    background: rgb(123, 158, 123);
+}
+
+.hihat-pad {
+    background: rgb(160, 67, 67);
+}
+
+.others-pad {
+    background: rgb(131, 113, 203);
+}
+
+.kick-pad.active {
+    background: rgb(55, 136, 228);
+}
+
+.snare-pad.active {
+    background: rgb(69, 146, 69);
+}
+
+.hihat-pad.active {
+    background: rgb(177, 34, 34);
+}
+
+.others-pad.active {
+    background: rgb(92, 68, 187);
+}
+
+.sequencer {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hihat-track, .snare-track, .kick-track , .others-track {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    justify-content: space-between;
+    margin-top: 3rem;
+    border-radius: 0.5%;
+    background: none;
+}
+
+.kick, .snare, .hihat, .others {
+    display: flex;
+    border-radius: 10px;
+    margin-top: 1rem 1rem;
+    background: rgba(10, 10, 10, 0);
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    margin: 0rem 2rem;
+    background: rgba(10, 10, 10, 0);
+}
+
+.controls button {
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    background: rgb(36, 36, 36);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.pad {
+    transition: all 0.5s ease;
+}
+
+.play {
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    background: rgb(36, 36, 36);
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+select {
+    padding: 1rem;
+    font-size: 1rem;
+    color: white;
+
+}
