@@ -13,15 +13,15 @@
 </head>
 
 <body>
-    <div class="sequencer"> 
-        <h1 class="title">Hola pipi</h1>
+    <div class="sequencer">
+        <h1 class="title">&#127926;&#129345;&#127926;</h1>
         <div class="kick-track">
             <div class="controls">
                 <h1>Kick</h1>
                 <button data-track="0" class="mute kick-volume"> <i class="fas fas fa-volume-mute"></i></button>
                 <select name="kick-select" id="kick-select">
-                    <option value="./sounds/kick-newwave.wav">NewWave Kick</option>
                     <option value="./sounds/kick-808.wav">808 Kick</option>
+                    <option value="./sounds/kick-newwave.wav"> NewWave Kick</option>
                 </select>
             </div>
             <div class="kick">
@@ -98,13 +98,17 @@
             </div>
         </div>
         <button class="play">Play</button>
+        <div class="tempo">
+            <input type="range" class="tempo-slider" max="300" min="20" value="150">
+            <p>Tempo: <span class="tempo-nr">150</span></p>
+        </div>
     </div>
 
     <audio class="kick-sound" src="./sounds/kick-808.wav"></audio>
     <audio class="snare-sound" src="./sounds/snare-808.wav"></audio>
     <audio class="hihat-sound" src="./sounds/hihat-808.wav"></audio>
     <audio class="others-sound" src="./sounds/clap-tape.wav"></audio>
-            <script src="./app.js"></script>
+    <script src="./app.js"></script>
 </body>
 
 </html>

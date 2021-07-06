@@ -1,9 +1,14 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     border-radius: 1;
-    background: linear-gradient(rgb(19, 19, 19),rgb(10, 10, 10))
+    background: linear-gradient(rgb(19, 19, 19),rgb(10, 10, 10));
+    font-family: 'nunito', sans-serif;
 }
 
 body {
@@ -13,13 +18,17 @@ body {
 i,
 svg {
     pointer-events: none;
-    background: rgb(36, 36, 36);
+    background: none;
 }
 
 h1 {
     background: none;
     color: white;
 }
+
+.controls h1{
+    width: 30%;
+} 
 
 .title {
     background: none;
@@ -94,6 +103,26 @@ h1 {
     background: rgba(10, 10, 10, 0);
 }
 
+#kick-select {
+    border-radius: 10px;
+    width: 40%;
+}
+
+#snare-select {
+    border-radius: 10px;
+    width: 40%;
+}
+
+#hihat-select {
+    border-radius: 10px;
+    width: 40%;
+}
+
+#others-select {
+    border-radius: 10px;
+    width: 40%;
+}
+
 .controls {
     display: flex;
     justify-content: space-between;
@@ -112,6 +141,11 @@ h1 {
     font-size: 1rem;
     cursor: pointer;
     transition: all 0.5s ease;
+}
+
+option {
+    background-color: rgb(36, 36, 36);
+    color: white;
 }
 
 .pad {
@@ -133,12 +167,43 @@ select {
     padding: 1rem;
     font-size: 1rem;
     color: white;
-
 }
 
 .mute.active {
     background: rgb(158, 158, 158);
+    color: rgb(36, 36, 36);
 }
+
+.tempo {
+    margin: 3rem;
+    width: 30%;
+    background: none;
+    color: white;
+
+}
+
+.tempo-slider {
+    padding: 0.2rem;
+    -webkit-appearance: none;
+    margin: 1rem 0rem;
+    width: 100%;
+    position: relative;
+    background: rgb(36, 36, 36);
+    color: white;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+.tempo p {
+    font-size: 1.5rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+.tempo-nr {
+    background-color: none;
+}
+
 
 @keyframes playTrack {
     from {
